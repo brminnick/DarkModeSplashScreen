@@ -7,7 +7,6 @@ I recently implemented this splash screen for my app, [Punday](https://mondaypun
 You can find the walkthrough to implement a Dark Mode Splash Screen here:
 https://codetraveler.io/2019/10/11/creating-a-dark-mode-splash-screen/
 
-## Screenshots
 
 | iOS, Dark Appearance Enabled | iOS Dark Appearance Disabled | Android Dark Theme Enabled | Android Dark Theme Disabled | 
 | ---------------------------- | ---------------------------- | -------------------------- | --------------------------- |
