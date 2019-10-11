@@ -1,7 +1,8 @@
-# DarkModeSplashScreen
-This is a sample app for iOS and Android written in Xamarin.Forms showing how to implement a Splash Page for Dark Mode
+# Dark Mode Splash Screen
 
-I recently implemented this functionality for my app, [Punday](https://mondaypunday.com/app), on [iOS](https://appsto.re/us/uYHSab.i) and [Android](https://play.google.com/store/apps/details?id=com.minnick.mondaypundayapp). Since Punday is not open-source, I put together this sample and assembled a walkthrough demonstrating how I created Punday's splash screen.
+Now that iOS 13 and Android Q support Dark Mode, we'll want our app's Splash Screen to be dark too. This sample demonstrates how to create a Splash Screen that is dark when Dark Mode is enabled, but still light when Dark Mode is disabled.
+
+I recently implemented this splash screen for my app, [Punday](https://mondaypunday.com/app), on [iOS](https://appsto.re/us/uYHSab.i) and [Android](https://play.google.com/store/apps/details?id=com.minnick.mondaypundayapp). Since Punday is not open-source, I put together this sample and assembled a walkthrough demonstrating how I created Punday's splash screen.
 
 You can find the walkthrough to implement a Dark Mode Splash Screen here:
 https://codetraveler.io/2019/10/11/creating-a-dark-mode-splash-screen/
