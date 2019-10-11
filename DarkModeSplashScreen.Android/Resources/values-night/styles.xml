@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LaunchTheme" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@drawable/splash_screen_night</item>
+    </style>
+</resources>
