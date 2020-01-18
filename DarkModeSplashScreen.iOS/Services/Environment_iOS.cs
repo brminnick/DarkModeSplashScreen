@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using DarkModeSplashScreen.iOS;
 using UIKit;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(Environment_iOS))]
@@ -24,21 +25,7 @@ namespace DarkModeSplashScreen.iOS
             };
         }
 
-        static UIViewController GetVisibleViewController()
-        {
-            var rootController = UIApplication.SharedApplication.KeyWindow.RootViewController;
-
-            return rootController.PresentedViewController switch
-            {
-                UINavigationController navigationController => navigationController.TopViewController,
-
-                UITabBarController tabBarController => tabBarController.SelectedViewController,
-
-                null => rootController,
-
-                _ => rootController.PresentedViewController,
-            };
-        }
+        static UIViewController GetVisibleViewController() => Platform.GetCurrentUIViewController();
     }
 }
 
