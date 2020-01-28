@@ -10,8 +10,6 @@ namespace DarkModeSplashScreen
 
         public SplashScreenPage()
         {
-            NavigationPage.SetHasNavigationBar(this, false);
-
             _mondayPundayImage = new Image
             {
                 Opacity = 0,

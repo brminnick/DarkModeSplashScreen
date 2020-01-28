@@ -29,7 +29,6 @@ namespace DarkModeSplashScreen
                     Theme.Dark => Color.White,
                     _ => throw new NotSupportedException()
                 },
-
                 Text = "We Did it!"
             };
         }
