@@ -10,7 +10,7 @@ namespace DarkModeSplashScreen.iOS
 {
     public class Environment_iOS : IEnvironment
     {
-        public Task<Theme> GetOperatingSystemThemeAsync() => Device.InvokeOnMainThreadAsync(GetOperatingSystemTheme);
+        public Task<Theme> GetOperatingSystemThemeAsync() => MainThread.InvokeOnMainThreadAsync(GetOperatingSystemTheme);
 
         public Theme GetOperatingSystemTheme()
         {
