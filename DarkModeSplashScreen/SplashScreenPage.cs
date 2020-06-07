@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Markup;
 
 namespace DarkModeSplashScreen
 {
@@ -10,20 +11,12 @@ namespace DarkModeSplashScreen
 
         public SplashScreenPage()
         {
-            _mondayPundayImage = new Image
+            Content = new Image
             {
                 Opacity = 0,
-                HorizontalOptions = LayoutOptions.CenterAndExpand,
-                VerticalOptions = LayoutOptions.CenterAndExpand,
-            };
-
-            if (Device.RuntimePlatform is Device.Android)
-            {
-                _mondayPundayImage.WidthRequest = 215;
-                _mondayPundayImage.HeightRequest = 105;
-            }           
-
-            Content = _mondayPundayImage;
+                WidthRequest = Device.RuntimePlatform is Device.Android ? 215 : -1,
+                HeightRequest = Device.RuntimePlatform is Device.iOS ? 105 : -1
+            }.CenterExpand().Assign(out _mondayPundayImage);
         }
 
         protected override async void OnAppearing()

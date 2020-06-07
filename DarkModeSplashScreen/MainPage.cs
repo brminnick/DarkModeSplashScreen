@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using Xamarin.Forms.Markup;
 
 namespace DarkModeSplashScreen
 {
@@ -16,21 +17,24 @@ namespace DarkModeSplashScreen
                 _ => throw new NotSupportedException()
             };
 
-            Content = new Label
-            {
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-                HorizontalTextAlignment = TextAlignment.Center,
-                VerticalTextAlignment = TextAlignment.Center,
+            Content = new TextLabel("We Did it!", operatingSystem);
+        }
 
-                TextColor = operatingSystem switch
+        class TextLabel : Label
+        {
+            public TextLabel(in string text, in Theme theme)
+            {
+                Text = text;
+                TextColor = theme switch
                 {
                     Theme.Light => Color.Black,
                     Theme.Dark => Color.White,
                     _ => throw new NotSupportedException()
-                },
-                Text = "We Did it!"
-            };
+                };
+
+                this.Center();
+                this.TextCenter();
+            }
         }
     }
 }
