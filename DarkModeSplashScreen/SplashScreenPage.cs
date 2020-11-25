@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Xamarin.Forms.Markup;
+using Xamarin.CommunityToolkit.Markup;
 
 namespace DarkModeSplashScreen
 {

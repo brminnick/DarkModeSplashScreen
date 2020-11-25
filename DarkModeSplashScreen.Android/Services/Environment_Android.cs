@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using Android.Content.Res;
 using DarkModeSplashScreen.Droid;
-using Plugin.CurrentActivity;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(Environment_Android))]
@@ -14,7 +13,7 @@ namespace DarkModeSplashScreen.Droid
 
         public Theme GetOperatingSystemTheme()
         {
-            var uiModeFlags = CrossCurrentActivity.Current.AppContext.Resources.Configuration.UiMode & UiMode.NightMask;
+            var uiModeFlags = Xamarin.Essentials.Platform.AppContext.Resources.Configuration.UiMode & UiMode.NightMask;
 
             return uiModeFlags switch
             {
