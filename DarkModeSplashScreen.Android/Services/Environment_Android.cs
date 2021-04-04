@@ -13,7 +13,7 @@ namespace DarkModeSplashScreen.Droid
 
         public Theme GetOperatingSystemTheme()
         {
-            var uiModeFlags = Xamarin.Essentials.Platform.AppContext.Resources.Configuration.UiMode & UiMode.NightMask;
+            var uiModeFlags = (Xamarin.Essentials.Platform.AppContext.Resources?.Configuration?.UiMode ?? UiMode.TypeUndefined) & UiMode.NightMask;
 
             return uiModeFlags switch
             {
