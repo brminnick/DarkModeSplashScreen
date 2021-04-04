@@ -3,12 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="AsyncAwaitBestPractices.MVVM" Version="5.1.0" />
-    <PackageReference Include="Xamarin.CommunityToolkit.Markup" Version="1.0.0-pre6" />
+    <PackageReference Include="Xamarin.CommunityToolkit.Markup" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
