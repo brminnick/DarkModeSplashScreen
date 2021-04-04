@@ -32,8 +32,7 @@ namespace DarkModeSplashScreen
                     _ => throw new NotSupportedException()
                 };
 
-                this.Center();
-                this.TextCenter();
+                this.Center().TextCenter();
             }
         }
     }
